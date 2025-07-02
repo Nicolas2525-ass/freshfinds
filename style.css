@@ -38,6 +38,21 @@ header {
   height: 180px;
   object-fit: cover;
 }
+.prueba-pago {
+  background: #e3f2fd;
+  padding: 2rem;
+  margin: 2rem auto;
+  max-width: 400px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(33, 150, 243, 0.3);
+}
+
+.prueba-pago h2 {
+  color: #1976d2;
+  margin-bottom: 1rem;
+}
+
 
 .producto h2 {
   font-size: 1.3rem;
