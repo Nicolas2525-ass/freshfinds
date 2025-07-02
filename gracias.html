@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Gracias por tu compra | FreshFinds</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #f0f2f5;
+      color: #222;
+      text-align: center;
+      padding: 3rem 1rem;
+    }
+    .telefono {
+      font-size: 1.5rem;
+      background: #27ae60;
+      color: white;
+      display: inline-block;
+      padding: 1rem 2rem;
+      border-radius: 8px;
+      margin-top: 2rem;
+      user-select: all;
+      word-break: break-word;
+    }
+  </style>
+</head>
+<body>
+  <h1>¡Gracias por tu compra!</h1>
+  <p>Tu número de proveedor es:</p>
+  <div class="telefono" id="numero-proveedor">Cargando...</div>
+
+  <script>
+    const params = new URLSearchParams(window.location.search);
+    const tel = params.get("tel");
+    const contenedor = document.getElementById("numero-proveedor");
+    if (tel) {
+      contenedor.textContent = tel;
+    } else {
+      contenedor.textContent = "Error al cargar el número.";
+    }
+  </script>
+</body>
+</html>

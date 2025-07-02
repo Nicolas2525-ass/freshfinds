@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>FreshFinds - Venta de Proveedores</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://www.paypal.com/sdk/js?client-id=OrestesLopez2525&currency=EUR"></script>
+
+</head>
+<body>
+  <header>
+    <h1>FreshFinds</h1>
+    <p>Los mejores proveedores a un clic</p>
+  </header>
+
+  <main>
+    <section class="catalogo">
+
+      <!-- Proveedor Tecnológico -->
+      <article class="producto" data-id="1" data-nombre="Proveedor Tecnológico" data-precio="7.99" data-telefono="+86 158 18709179">
+        <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=400&h=250&q=80" alt="Proveedor Tecnológico" />
+        <h2>Proveedor Tecnológico</h2>
+        <p>Precio: 7.99 €</p>
+        <button class="btn-comprar">Comprar</button>
+      </article>
+
+      <!-- Zapatillas - 3 productos -->
+      <article class="producto" data-id="2" data-nombre="Zapatillas Proveedor 1" data-precio="6.99" data-telefono="+86 18760590822">
+        <img src="https://images.unsplash.com/photo-1528701800489-1a53b91a6da0?auto=format&fit=crop&w=400&h=250&q=80" alt="Zapatillas 1" />
+        <h2>Zapatillas Proveedor 1</h2>
+        <p>Precio: 6.99 €</p>
+        <button class="btn-comprar">Comprar</button>
+      </article>
+
+      <article class="producto" data-id="3" data-nombre="Zapatillas Proveedor 2" data-precio="6.99" data-telefono="+852 55908715">
+        <img src="https://images.unsplash.com/photo-1600185361280-3708e191c1e3?auto=format&fit=crop&w=400&h=250&q=80" alt="Zapatillas 2" />
+        <h2>Zapatillas Proveedor 2</h2>
+        <p>Precio: 6.99 €</p>
+        <button class="btn-comprar">Comprar</button>
+      </article>
+
+      <article class="producto" data-id="4" data-nombre="Pack 3 Proveedores Zapatillas" data-precio="9.99" data-telefono="+86 18760590822, +852 55908715, +86 18039068412">
+        <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=400&h=250&q=80" alt="Pack Zapatillas" />
+        <h2>Pack 3 Proveedores Zapatillas</h2>
+        <p>Precio: 9.99 €</p>
+        <button class="btn-comprar">Comprar</button>
+      </article>
+
+      <!-- Bolsos -->
+      <article class="producto" data-id="5" data-nombre="Bolsos" data-precio="8.50" data-telefono="+86 13860983885">
+        <img src="https://images.unsplash.com/photo-1503342217505-b0a15ec3261c?auto=format&fit=crop&w=400&h=250&q=80" alt="Bolsos" />
+        <h2>Bolsos</h2>
+        <p>Precio: 8.50 €</p>
+        <button class="btn-comprar">Comprar</button>
+      </article>
+
+      <!-- Artículos de Fútbol -->
+      <article class="producto" data-id="6" data-nombre="Camisetas Fútbol" data-precio="5.00" data-telefono="+86 17827260629">
+        <img src="https://images.unsplash.com/photo-1509228627152-4e6c44e6e24c?auto=format&fit=crop&w=400&h=250&q=80" alt="Camisetas Fútbol" />
+        <h2>Camisetas Fútbol</h2>
+        <p>Precio: 5.00 €</p>
+        <button class="btn-comprar">Comprar</button>
+      </article>
+
+      <article class="producto" data-id="7" data-nombre="Botas Fútbol" data-precio="16.00" data-telefono="+86 13365949664">
+        <img src="https://images.unsplash.com/photo-1517964108603-7ca92e82ae47?auto=format&fit=crop&w=400&h=250&q=80" alt="Botas Fútbol" />
+        <h2>Botas Fútbol</h2>
+        <p>Precio: 16.00 €</p>
+        <button class="btn-comprar">Comprar</button>
+      </article>
+
+      <!-- Artículos de Lujo -->
+      <article class="producto" data-id="8" data-nombre="Artículos de Lujo" data-precio="8.99" data-telefono="+86 18059521634">
+        <img src="https://images.unsplash.com/photo-1489987707025-afc232f7ea0f?auto=format&fit=crop&w=400&h=250&q=80" alt="Artículos de Lujo" />
+        <h2>Artículos de Lujo</h2>
+        <p>Precio: 8.99 €</p>
+        <button class="btn-comprar">Comprar</button>
+      </article>
+
+      <!-- MegaProveedor -->
+      <article class="producto" data-id="9" data-nombre="MegaProveedor" data-precio="20.00" data-telefono="+86 158 8039 3521">
+        <img src="https://images.unsplash.com/photo-1556740738-b6a63e27c4df?auto=format&fit=crop&w=400&h=250&q=80" alt="MegaProveedor" />
+        <h2>MegaProveedor</h2>
+        <p>Precio: 20.00 €</p>
+        <button class="btn-comprar">Comprar</button>
+      </article>
+
+      <!-- Perfumes Españoles -->
+      <article class="producto" data-id="10" data-nombre="Perfumes Españoles" data-precio="9.99" data-telefono="+34 621 48 30 14">
+        <img src="https://images.unsplash.com/photo-1502916225917-c5c8b9306ffb?auto=format&fit=crop&w=400&h=250&q=80" alt="Perfumes Españoles" />
+        <h2>Perfumes Españoles</h2>
+        <p>Precio: 9.99 €</p>
+        <button class="btn-comprar">Comprar</button>
+      </article>
+    </section>
+
+    <section id="formulario-compra" class="modal-oculto">
+      <div class="modal-contenido">
+        <h2>Completa tus datos para pagar</h2>
+        <form id="form-compra">
+          <p>Producto: <span id="producto-nombre"></span></p>
+          <p>Precio: <span id="producto-precio"></span> €</p>
+          <input type="text" id="cliente-nombre" placeholder="Nombre completo" required />
+          <input type="email" id="cliente-email" placeholder="Correo electrónico" required />
+          <input type="tel" id="cliente-tel" placeholder="Número de teléfono" required />
+          <div id="paypal-button-container"></div>
+          <button type="button" id="btn-cancelar">Cancelar</button>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <h3>Contacto</h3>
+    <p>Email: <a href="mailto:revender.ny@gmail.com">revender.ny@gmail.com</a></p>
+    <p>TikTok: <a href="https://www.tiktok.com/@revender.ny" target="_blank">@revender.ny</a></p>
+    <p>Instagram: <a href="https://www.instagram.com/fresh.finds.12" target="_blank">@fresh.finds.12</a></p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
