@@ -79,3 +79,27 @@ function renderPaypalButton(precio) {
     }
   }).render("#paypal-button-container");
 }
+// Botón PayPal pago prueba 0€
+paypal.Buttons({
+  style: { layout: 'vertical', color: 'blue', shape: 'rect', label: 'paypal' },
+
+  createOrder: (data, actions) => {
+    return actions.order.create({
+      purchase_units: [{
+        amount: {
+          value: '0.00'
+        }
+      }]
+    });
+  },
+
+  onApprove: (data, actions) => {
+    return actions.order.capture().then(() => {
+      alert('Pago de prueba realizado con éxito. ¡Funciona!');
+    });
+  },
+
+  onError: err => {
+    alert('Error en pago de prueba: ' + err);
+  }
+}).render('#paypal-button-prueba');
